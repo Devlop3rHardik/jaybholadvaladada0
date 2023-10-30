@@ -1,0 +1,85 @@
+baseURL = ""
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "JBD CAR"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "FeelIt"
+
+[params]
+  # FeelIt theme version
+  version = "1.0.X"
+
+  [languages.en.params.home.posts]
+          enable = true
+          # special amount of posts in each home posts page
+          paginate = 6
+          # display image-preview
+          imagePreview = true
+
+
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
+
+  [[menu.main]]
+  identifier = "privacypolicy"
+  pre = ""
+  post = ""
+  name = "Privacy Policy"
+  url = "/privacypolicy/"
+  title = ""
+  weight = 4
+
+[[menu.main]]
+  identifier = "contact"
+  pre = ""
+  post = ""
+  name = "Contact us"
+  url = "/contactus/"
+  title = ""
+  weight = 5
+
+[[menu.main]]
+  identifier = "Termscondition"
+  pre = ""
+  post = ""
+  name = "Terms & Conditions"
+  url = "/terms/"
+  title = ""
+  weight = 6
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/khusika/FeelIt/issues/158)
+    noClasses = false
